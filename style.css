@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    background-color: #24252a;
+    margin: 0;
+    padding: 0;
+   
+}
+.logo{
+    width: 5%;
+    height: 50px;
+    padding-left: 0px;
+}
+
+li, a, button{
+    font-family: "Montserrat", 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1px 1%;
+    
+    margin: 0.2%;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    padding-left: 0px;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #0088a9;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 139, 169, 1) ;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 139, 169, 0.8) ;
+}
+
+.fgrid{
+    display: grid;
+    grid-template-columns: 49.9% 49.9%;
+    grid-row: auto;   
+    margin: 0.2%;
+}
+.fgrid >div img{
+    width: 100%;
+    height: auto;
+}
+
+#wel{
+    color: #8B008B;
+    text-align: center;
+}
+
+.scgrid{
+    display: grid;
+    grid-template-columns: 24.2% 24.2% 24.2% 24.2%;
+    grid-row: auto;
+    gap: 1%;
+    margin-top: 2%;
+    background-color: rosybrown;
+}
+.scgrid > div img{
+    width: 100%;
+    height: 380px;
+}
+.scgrid > div{
+    text-align: center;
+}
+
+.footer{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+@media(max-width: 750px){
+    .fgrid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row: auto;
+    }
+    .fgrid img{
+        width: 100%;
+        height: auto;
+    }
+    .scgrid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row: auto;
+    }
+    .scgrid img{
+        width: 100%;
+        height: auto;
+    }
+}
