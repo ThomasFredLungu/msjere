@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    background-color: #24252a;
+    
     margin: 0;
     padding: 0;
    
@@ -24,7 +24,7 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding: 1px 1%;
-    
+    background-color: #24252a;
     margin: 0.2%;
 }
 
@@ -65,13 +65,13 @@ button:hover {
 
 .fgrid{
     display: grid;
-    grid-template-columns: 49.9% 49.9%;
+    grid-template-columns: 100%;
     grid-row: auto;   
     margin: 0.2%;
 }
 .fgrid >div img{
     width: 100%;
-    height: auto;
+    height: 380px !important;
 }
 
 #wel{
@@ -85,7 +85,6 @@ button:hover {
     grid-row: auto;
     gap: 1%;
     margin-top: 2%;
-    background-color: rosybrown;
 }
 .scgrid > div img{
     width: 100%;
@@ -93,6 +92,10 @@ button:hover {
 }
 .scgrid > div{
     text-align: center;
+    background-color: rgb(220,220,220);
+}
+.scgrid a{
+    color: blue;
 }
 
 .footer{
@@ -117,7 +120,10 @@ button:hover {
         grid-row: auto;
     }
     .scgrid img{
-        width: 100%;
-        height: auto;
+        max-width: 90%;
+        height: auto !important;
+    }
+    .footer{
+        padding-top: 350px !important;
     }
 }
